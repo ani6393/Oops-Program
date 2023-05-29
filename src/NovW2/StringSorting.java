@@ -1,14 +1,14 @@
 package NovW2;
 public class StringSorting
 {public static void main(String[]args) {
- String[] a = {"aniket", "vikas", "mohit", "sarthak" };
+ String[] a = {"aniket", "vikas", "mohit","tanmay","sarthak" };
  int min;
  String temp = "";
  {
   for(int i=0;i<a.length;i++)
   {
    min=i;
-   for(int j=i+1;j<a.length;j++)
+   for(int j=i+1;j<a.length-1-i;j++)
    {
     if(a[j].compareTo(a[min])<0)
     {
@@ -24,6 +24,5 @@ public class StringSorting
   System.out.print(a[i]+",");
  }
  }
-
 }
 }
